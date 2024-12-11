@@ -8,7 +8,7 @@
         <p>Please check your email for a verification link.</p>
         <form method="POST" action="{{ route('verification.send') }}">
             @csrf
-            <button type="submit" class="btn btn-primary">Resend Verification Email</button>
+            <button type="submit" class="btn btn-primary">Resend Verification Email</button><br><br>
         </form>
         <a href="{{ route('logout') }}" class="btn btn-secondary" 
            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
